@@ -27,4 +27,7 @@ const reset = document.getElementById("reset");
 reset.addEventListener ('click', function(){
     currentNumber = 0;
     currentNumberWrapper.innerHTML = currentNumber;
+    if(currentNumber >= 0){
+        currentNumberWrapper.style.color = 'white';
+    }
 });
